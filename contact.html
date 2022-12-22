@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      input {
+        outline: none;
+      }
+
+      input {
+        border: 2px solid aqua;
+      }
+
+      input[type='text'] {
+        color: blue;
+      }
+
+      input[type='password'] {
+        color: red;
+      }
+
+      input[type='radio']+label {
+        color: red;
+      }
+
+      /* h1+p{ 
+      color: rebeccapurple;
+      }  */
+    </style>
+  </head>
+
+  <body>
+    <h1>Contact Me</h1>
+    <form action="mailto:rrrkk558@gmail.com?cc=tyoketo@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Your Name:</label>
+      <input type="text" name="Name" id="name" placeholder="Name">
+      <br><br>
+      <label for="mail">Your Email:</label>
+      <input type="email" name="Mail from" id="" placeholder="Email" required>
+      <br><br>
+      <label for="p">Password:</label>
+      <input type="Password" name="Password" id="p" placeholder="Your Password">
+      <br><br>
+      <label for="Gender">Gender:</label>
+
+      <input type="radio" name="Gender" id="Male" value="Male">
+      <label for="Male">Male</label>
+      <input type="radio" name="Gender" id="Female" value="Female">
+      <label for="Female">Female</label>
+
+      <br><br>
+      <label for=""></label>
+      <textarea name="Message" id="" cols="30" rows="10" placeholder="Type Message"></textarea>
+      <br><br>
+      <label for="">Select Country</label>
+      <select name="Country" id="">
+        <option value="Country Unselected">Select Country</option>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="China">China</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Potugal">Portugal</option>
+      </select>
+      <br><br>
+      <input type="submit" value="submit">
+
+
+    </form>
+
+  </body>
+
+</html>
