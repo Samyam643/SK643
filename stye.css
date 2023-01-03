@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --common-color: #1E293B;
+
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+a:hover {
+  color: aqua;
+
+}
+
+li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+img {
+  width: 100%;
+  /* height: auto; */
+}
+
+.header {
+  background-color: var(--common-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px;
+  align-items: baseline;
+}
+
+.header ul {
+  display: flex;
+}
+
+.showcase {
+  background-color: var(--common-color);
+  color: white;
+  display: grid;
+  /* grid-column: 1fr 1fr; */
+  grid-template-columns: 1.6fr 1fr;
+  height: 300px;
+  padding: 15px 15px;
+  /* align-items: flex-end */
+}
+
+.showcase .info {
+  padding-top: 70px;
+  line-height: 2rem;
+}
+
+.showcase input {
+  width: 40%;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.showcase button {
+  background-color: aqua;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.showcase button:hover {
+  background-color: black;
+  color: white;
+}
+
+.feature-section {
+  margin-top: 7%;
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature-section .feature-section {
+  text-align: center;
+}
+
+.info {
+  box-shadow: black;
+  padding: 2px;
+}
+
+.info h3 {
+  padding: 10px 0;
+}
+
+.info p {
+  text-align: justify;
+}
+
+.testimonials {
+  /* background-color: var(--common-color); */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 10px 10px;
+  color: white;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: var(--common-color);
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+}
+
+.person-detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.person-detail img {
+  clip-path: circle();
+}
+
+.footer {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--common-color);
+  color: white;
+}
